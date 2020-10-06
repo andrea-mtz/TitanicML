@@ -1,0 +1,98 @@
+(base) PS C:\WINDOWS\system32> conda create -n kenv
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: C:\ProgramData\Anaconda3\envs\kenv
+
+
+
+Proceed ([y]/n)? y
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate kenv
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+(base) PS C:\WINDOWS\system32> conda activate kenv
+(kenv) PS C:\WINDOWS\system32> conda install -c conda-forge kaggle
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: C:\ProgramData\Anaconda3\envs\kenv
+
+  added / updated specs:
+    - kaggle
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    kaggle-1.5.8               |   py38h32f6830_0         122 KB  conda-forge
+    python-dateutil-2.8.1      |             py_0         220 KB  conda-forge
+    python-slugify-4.0.1       |     pyh9f0ad1d_0          12 KB  conda-forge
+    text-unidecode-1.3         |             py_0          68 KB  conda-forge
+    unidecode-1.1.1            |             py_0         157 KB  conda-forge
+    urllib3-1.24.3             |           py38_0         152 KB  conda-forge
+    ------------------------------------------------------------
+                                           Total:         731 KB
+
+The following NEW packages will be INSTALLED:
+
+  ca-certificates    conda-forge/win-64::ca-certificates-2020.6.20-hecda079_0
+  certifi            conda-forge/win-64::certifi-2020.6.20-py38h32f6830_0
+  cffi               conda-forge/win-64::cffi-1.14.3-py38hba49e27_0
+  chardet            conda-forge/win-64::chardet-3.0.4-py38h32f6830_1007
+  cryptography       conda-forge/win-64::cryptography-3.1.1-py38hba49e27_0
+  idna               conda-forge/noarch::idna-2.10-pyh9f0ad1d_0
+  kaggle             conda-forge/win-64::kaggle-1.5.8-py38h32f6830_0
+  openssl            conda-forge/win-64::openssl-1.1.1h-he774522_0
+  pip                conda-forge/noarch::pip-20.2.3-py_0
+  pycparser          conda-forge/noarch::pycparser-2.20-pyh9f0ad1d_2
+  pyopenssl          conda-forge/noarch::pyopenssl-19.1.0-py_1
+  pysocks            conda-forge/win-64::pysocks-1.7.1-py38h32f6830_1
+  python             conda-forge/win-64::python-3.8.5-h60c2a47_9_cpython
+  python-dateutil    conda-forge/noarch::python-dateutil-2.8.1-py_0
+  python-slugify     conda-forge/noarch::python-slugify-4.0.1-pyh9f0ad1d_0
+  python_abi         conda-forge/win-64::python_abi-3.8-1_cp38
+  requests           conda-forge/noarch::requests-2.24.0-pyh9f0ad1d_0
+  setuptools         conda-forge/win-64::setuptools-49.6.0-py38h32f6830_1
+  six                conda-forge/noarch::six-1.15.0-pyh9f0ad1d_0
+  sqlite             conda-forge/win-64::sqlite-3.33.0-he774522_0
+  text-unidecode     conda-forge/noarch::text-unidecode-1.3-py_0
+  tqdm               conda-forge/noarch::tqdm-4.50.0-pyh9f0ad1d_0
+  unidecode          conda-forge/noarch::unidecode-1.1.1-py_0
+  urllib3            conda-forge/win-64::urllib3-1.24.3-py38_0
+  vc                 conda-forge/win-64::vc-14.1-h869be7e_1
+  vs2015_runtime     conda-forge/win-64::vs2015_runtime-14.16.27012-h30e32a0_2
+  wheel              conda-forge/noarch::wheel-0.35.1-pyh9f0ad1d_0
+  win_inet_pton      conda-forge/win-64::win_inet_pton-1.1.0-py38_0
+  wincertstore       conda-forge/win-64::wincertstore-0.2-py38_1003
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+kaggle-1.5.8         | 122 KB    | ############################################################################ | 100%
+python-dateutil-2.8. | 220 KB    | ############################################################################ | 100%
+python-slugify-4.0.1 | 12 KB     | ############################################################################ | 100%
+text-unidecode-1.3   | 68 KB     | ############################################################################ | 100%
+unidecode-1.1.1      | 157 KB    | ############################################################################ | 100%
+urllib3-1.24.3       | 152 KB    | ############################################################################ | 100%
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+(kenv) PS C:\WINDOWS\system32> kaggle competitions download -c titanic
+
